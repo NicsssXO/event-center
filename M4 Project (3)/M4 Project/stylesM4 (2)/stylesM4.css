@@ -1,0 +1,215 @@
+/* Flexbox for general layout */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Default styles for desktops */
+body {
+    font-family: arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Tablet view */
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Mobile view */ 
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+nav {
+    background: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    margin: 20px;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.about-us {
+    padding: 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.featured {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.event {
+    background: #f4f4f4;
+    padding:20px; 
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 600px;
+    text-align: left;
+}
+
+.event img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.event h2 {
+    color: #333;
+    margin-top: 10px;
+}
+
+.event p {
+    font-size: 16px;
+}
+
+.menu{
+    text-align: center;
+    padding: 20px;
+}
+
+/* Grid for menu page */
+.menu-table {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #333;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+tr:hover {
+    background: #ddd;
+}
+
+.location {
+    text-align: center;
+    padding: 20px;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.contact {
+    text-align: center;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    background: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+    transform: scale(1.05);
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+img:hover {
+    opacity: 0.8;
+}
